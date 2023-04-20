@@ -1,0 +1,6 @@
+listenAddress: 0.0.0.0:8080
+broadcastAddress: 192.168.0.255
+macAddress: 01:23:45:67:89:AB
+serviceName: My Service
+serverWakeupTime: 60
+serviceAliveRoute: /api/v1/status

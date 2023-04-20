@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ .ServiceName }} WOL Service</title>
+
+  <link href="/static/bootstrap.min.css" rel="stylesheet">
+
+  <link href="/static/index.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+
+  <main class="start-button">
+    <button id="bStart" class="w-100 btn btn-lg btn-primary"
+      onclick="wakeAndStartSpinner({{ .WakeupTime }}, '{{ .AliveRoute }}')">Start {{ .ServiceName }}</button>
+    <p id="pStart"></p>
+  </main>
+
+  <script src="/static/index.js"></script>
+</body>
+
+</html>
